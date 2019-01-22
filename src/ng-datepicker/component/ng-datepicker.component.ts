@@ -44,7 +44,6 @@ export interface DatepickerOptions {
   fieldId?: string;
   /** If false, barTitleIfEmpty will be disregarded and a date will always be shown. Default: true */
   useEmptyBarTitle?: boolean;
-  inline?:boolean;
 }
 
 // Counter for calculating the auto-incrementing field ID
@@ -368,9 +367,7 @@ export class NgDatepickerComponent implements ControlValueAccessor, OnInit, OnCh
 
     const container = this.elementRef.nativeElement.querySelector('.ngx-datepicker-calendar-container');
     if (container && container !== e.target && !container.contains(<any>e.target) && !(<any>e.target).classList.contains('year-unit')) {
-      if(this.options.inline==undefined||!this.options.inline){
-        this.close();
-      }
+      
     }
   }
 }
