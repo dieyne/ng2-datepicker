@@ -25,7 +25,7 @@ npm install ng2-datepicker --save
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgDatepickerModule } from 'ng2-datepicker';
+import { NgDatepickerModule } from 'datepickerng2';
 
 @NgModule({
   imports: [
@@ -52,7 +52,7 @@ export class AppModule {}
 
 ## Options
 ```ts
-import { DatepickerOptions } from 'ng2-datepicker';
+import { DatepickerOptions } from 'datepickerng2';
 import * as frLocale from 'date-fns/locale/fr';
 
 options: DatepickerOptions = {
@@ -71,6 +71,7 @@ options: DatepickerOptions = {
   addStyle: {}, // Optional, value to pass to [ngStyle] on the input field
   fieldId: 'my-date-picker', // ID to assign to the input field. Defaults to datepicker-<counter>
   useEmptyBarTitle: false, // Defaults to true. If set to false then barTitleIfEmpty will be disregarded and a date will always be shown 
+  inline: false, // with an input or not
 };
 ```
 
