@@ -17,7 +17,7 @@ Angular 2+ Simple and minimal datepicker component
 1. Install package from `npm`.
 
 ```sh
-npm install ng2-datepicker --save
+npm install datepickerng2 --save
 ```
 
 2. Include NgDatepickerModule into your application.
